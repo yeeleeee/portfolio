@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--https://github.com/michalsnik/aos#-animations-->
+<html>
+<head>
+<title>AOS demo!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+<link href="aos.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+
+</head>
+<body>
+  <section id="one"> 
+    <div 
+    class="box"
+    data-aos="fade-up" 
+    data-aos-anchor="#two"
+    data-aos-anchor-placement="top-bottom"
+    ></div>
+  </section>
+  <section id="two"> 
+    <div class="wrapper">
+        <div class="paragraph margintop20">
+            <h2> This is H2 </h2>
+            <p > Bacon ipsum dolor amet porchetta capicola pork belly ground round tenderloin. Pig beef capicola drumstick porchetta, bresaola boudin. Spare ribs pancetta capicola pig shankle, frankfurter brisket kevin pork chop meatball shoulder kielbasa. Short loin jowl capicola andouille hamburger pork chop, pig rump. Corned beef burgdoggen beef, shoulder short loin shank pastrami fatback biltong ham hamburger cupim.</p>
+        </div> 
+    </div>
+    <div class="wrapper margintop40"> 
+        <div class="img" id="i1"
+        data-aos="slide-down-1"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="800">
+        <img src="sources/iPhone%20X_Top_Isometric%20Copy%202.png">    
+        </div>
+        <div class="img" id="i2"
+        data-aos="slide-down-2"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="400">
+        <img src="sources/iPhone%20X_Top_Isometric%20Copy.png">    
+        </div>
+        <div class="img" id="i3"
+        data-aos="slide-down-3"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="400">
+        <img src="sources/iPhone%20X_Isometric.png">    
+        </div>
+    </div>
+
+   
+   
+   <!--
+    <div 
+    class="box"
+    data-aos="slide-right" 
+    data-aos-anchor-placement="center-bottom"
+    ></div>
+    <div 
+    class="box"
+    data-aos="slide-left-top" 
+    data-aos-anchor-placement="bottom-bottom"
+    ></div>
+-->
+  </section>
+  <section id="three"></section>
+    
+    
+    
+
+    
+        
+    
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        disable: window.innerWidth < 768
+    });
+</script>
+</body>
+</html>
