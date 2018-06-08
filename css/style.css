@@ -1,0 +1,99 @@
+body{
+    background-color: #f6f7f8;
+    margin:0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+}
+section{
+   min-height: 50vh;
+}
+
+#orange{
+    width: 80vw;
+    color: tomato;
+    margin: auto;
+}
+.wrapper{
+    width: 80vw;
+    margin: auto;
+    overflow: hidden;
+}
+.halfwrapper{
+    width: 40vw;
+    margin: 5vw;
+    overflow: hidden;
+}
+.imgwrapper{
+    width: 50vw;
+    margin: 0;
+}
+
+.bgimage{
+    background-size: cover;
+}
+
+
+
+/*typography*/
+.paragraph{
+    font-family: 'Montserrat', sans-serif; 
+    color: #1a2421;
+    margin-bottom: 4rem;
+}
+.flavor{
+    font-style:italic;
+}
+h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+div, p{ 
+   font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.caption{
+    font-size: .8em;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+
+
+/*margins for divs*/
+.margintop20{
+    margin-top: 20vh;
+    overflow: visible;
+}
+.margintop30{
+    margin-top: 30vh;
+    overflow: visible;
+}
+.margintop40{
+    margin-top: 40vh;
+    overflow: visible;
+}
+
+
+.paragraph{
+    line-height: 1.8;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+#one{
+    height: 50vh;
+    display: flex;
+/*
+    border: 2px solid tomato;
+    margin: 2%;
+*/
+}
+}
