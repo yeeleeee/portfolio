@@ -8,6 +8,14 @@ section{
    min-height: 50vh;
 }
 
+section.full{
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
 #orange{
     width: 80vw;
     color: tomato;
@@ -30,6 +38,38 @@ section{
 
 .bgimage{
     background-size: cover;
+}
+
+/*color*/
+#purple{
+    background-color: #eaecff;
+}
+#purpletxt{
+    color: #eaecff;
+}
+#yellow{
+    background-color: #fcda32;
+}
+#yellowtxt{
+    color: #fcda32;
+}
+#blue{
+    background-color: #003bff;
+}
+#bluetxt{
+    color: #003bff;
+}
+#green{
+    background-color: #006b42;
+}
+#greentxt{
+   color: #006b42;
+}
+#brown{
+    background-color: #994312;
+}
+#browntxt{
+    color: #994312;
 }
 
 

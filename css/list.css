@@ -1,0 +1,17 @@
+#two {
+    background-color: deeppink;
+}
+
+[data-aos="red"]{
+    opacity: .7;
+    transition-property: opacity;}
+
+[data-aos="red"].aos-animate{
+    opacity: 0;
+    }
+
+#three {
+    background: linear-gradient(rgba(0,130,170,0), 10%, rgba(0,130,170,.3),90%, rgba(0,130,170,0));
+    background-blend-mode: screen;
+    
+}

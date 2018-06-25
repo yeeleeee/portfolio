@@ -29,10 +29,20 @@ img{
 }
 
 
+[data-aos=fade-box]{
+    transform: scale(0.125);
+}
 
 
-
-
+/*mainpage*/
+[data-aos="blue"]{
+    transform: scale(1.5);
+    transition-property: transform;
+}
+[data-aos=fade-blue].aos-animate{
+    width: 100vw;
+    height: 150vh;
+}
 
 
 [data-aos=slide-right] {
