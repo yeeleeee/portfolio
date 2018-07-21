@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--https://medium.com/@emmanelson_72964/the-easy-way-to-create-parallax-scrolling-eb708d434a4a-->
+<html>
+<head>
+<title>Rellax demo!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="rellax.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="margin: 0">
+
+<section class="one"> 
+  <div class="rellax chill">
+  I’m that default chill speed of "-2"
+</div>
+  <div class="rellax chill" data-rellax-speed="7">
+  I’m super fast!!
+</div>
+  <div class="rellax chill" data-rellax-speed="-4">
+  I’m extra slow and smooth
+</div>
+  <div class="rellax box" data-rellax-speed="6"> </div>
+  <div class="rellax box" data-rellax-speed="3"> </div>
+</section>
+<section class="two">
+  <div class="rellax chill">
+  I’m that default chill speed of "-2"
+</div>
+  <div class="rellax chill" data-rellax-speed="7">
+  I’m super fast!!
+</div>
+  <div class="rellax chill" data-rellax-speed="-4">
+  I’m extra slow and smooth
+</div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.js"></script>
+<script type="text/javascript">
+	var rellax = new Rellax('.rellax',{
+        speed: 0,
+        center: true,
+        vertical: true,
+        horizontal: false
+    });
+//    rellax.destroy();
+</script>   
+</body>
+</html>

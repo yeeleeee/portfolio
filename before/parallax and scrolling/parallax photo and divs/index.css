@@ -1,0 +1,55 @@
+
+
+/*for parallex scrolling*/
+
+body, html {
+    height: 100%;
+}
+
+/****************typography*/
+
+.maintitle{
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2em;
+    padding: 3em;
+    color: black;
+}
+
+.parallax { 
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#one{
+        /* The image used */
+    background-image: url("../sources/Screen%20Shot%202018-05-07%20at%202.30.53%20PM.png");
+}
+
+#two{
+    background-image: url("../sources/IMG_0486.JPG");
+}
+
+
+
+
+/*************transparent box for text*/
+div.transbox {
+/*    margin: 10%;*/
+    background-color: #ffffff;
+/*    border: 1px solid black;*/
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+/*    font-weight: bold;*/
+    color: #000000;
+}

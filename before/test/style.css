@@ -1,0 +1,108 @@
+@import 'reset.css';
+
+html{
+    font-size: 16px;
+    background: #866c711f;
+}
+
+/*
+under body - 
+wrapper:"whole"
+header (nav menu)
+div.workspace
+    div.banner (page title and img)
+    grid
+        other divs with area-*
+*/
+
+
+header{
+/*    height: 15vh;*/
+}
+
+.banner{
+    width: 100%;
+    padding: 0;
+    height: 50vh;
+    overflow: hidden;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3em;
+    font-weight: 400;
+}
+
+.sectiontitle {
+/*    padding-left: 1em;*/
+    font-size: 1.6rem;
+    line-height: 3.5em;
+    font-weight: 700;
+}
+
+/**********typography********/
+p{
+    margin-bottom: 1.6em;
+    /*        z-index: 10;*/
+    }
+
+
+/**************grid*************/
+/*as you add grid content update grid template and area!!*/
+grid{
+    padding: 2em;
+    display: grid;
+    grid-gap: 2em;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    
+    grid-template-areas:
+        "main main main sidebar sidebar "
+        "footer footer footer sidebar2 sidebar2"
+}
+
+
+
+.area-1{
+    grid-area: main;
+    line-height: 1.6em;
+}
+    img{
+        width: 100%;
+        padding-right:0;
+    }
+
+
+.area-2{
+    grid-area: sidebar;
+    margin-top: 15em;
+    line-height: 1.8em;
+}
+
+.area-3{
+    grid-area: footer;
+    margin-top:8em;
+    line-height: 1.6em;
+}
+.area-4{
+    grid-area: sidebar2;
+}
+
+::selection {
+    color: #EE4035; 
+/*    background: white;*/
+}
+
+
+/*
+good to know
+    (anything that is a direct decendent of section follows this code)
+section > * {
+    border-radius: .5em;
+    padding: 1em;
+}
+*/
+

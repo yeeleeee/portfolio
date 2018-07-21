@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700|Sacramento|Open Sans');
+
+
+
+
+html{
+   background-color: #f6f7f8; 
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    padding: 3em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*******menu*******/
+nav{
+    font-weight: 300;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    margin-right: 2em;
+    text-decoration: none;
+}
+li:last-of-type {
+    float: right;
+    margin-right: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: orangered;
+    transition: 0.3s ease;
+}
+
+
+/********body********/
+
+/*
+each page has this if needed!
+#maintitle{
+    font-size: 3rem;
+    line-height: 2em;
+    padding-top: 3em;
+}
+*/
+
+.title{
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.6em;
+    padding: 2rem;   
+}
+
+/**********grid**********/
+/*
+first container after nav: section.workspace
+then grid
+then div.content area-*
+then div.style*
+*/
+
+.content{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+grid{
+/*    background: pink;*/
+    padding: 2em;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1em;
+
+    grid-template-areas:
+        "main1 main1 img"
+        "main2 main2 img"
+        ". main3 main3"
+        "main4 main4 main4"
+}
+
+.area-1{
+    grid-area: main1;
+}
+
+.area-2{
+    grid-area: main2;
+}
+.area-3{
+    grid-area: main3;
+    text-align: right;
+}
+.area-4{
+    grid-area: main4;
+    text-align: center;
+}
+
+
+
+/******color******/
+.colorchip{
+    display:inline-block;
+    margin: 3%;
+    padding: 8%;
+    border-radius: 50%;
+    
+}
+
+#c1{
+    background: #106b39;
+}
+#c2{
+    background: #f16144;
+}
+#c3{
+    background: #2f3c66;
+}
+#c4{
+    background: #fbc263;
+}
+#c5{
+    background: #42b861;
+}
+#c6{
+    background: #f47e61;
+}
+#c7{
+    background: #99dcff;
+}
+#c8{
+    background: #ffeb84;
+}
+#c9{
+    background: #2f2f2f;
+}
+#c10{
+    background: #f6f7f8;
+}
+
+/*******typography******/
+.style1{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+
+
+
+/********media queries********/
+@media screen and (max-width: 550px) {
+    
+    html {
+        font-size: 13px;
+    }
+    
+    
+    
+}
