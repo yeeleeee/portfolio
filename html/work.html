@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<!--global heading-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <title>Yejin Lee</title>
+    <link rel="shortcut icon" href="iconyej.png">
+    
+<!--  css styles  -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<!--fonts    -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' 
+      rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    
+    
+    
+<style>
+/*work - cardlist***************************************/
+.band{
+/*    background: #a1fd02;*/
+    margin: auto;
+}
+.band ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.band ul li:hover{
+    transform: scale(1.025);
+    transition: transform 0.3s; 
+}
+.band ul li{
+    position: inline-block;
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+    overflow: hidden;
+    margin: 3vw;
+}
+.band ul li img{
+    width: 300%;
+    background-size: cover;
+}
+
+/**********************************/
+</style>
+
+
+</head>
+<body>
+<!--nav-------------------------------------------->
+<nav><ul>
+        <a class="nav" href="../html/about.html"><li>About</li></a>
+        <a class="nav" href=""><li>Work</li></a>
+        <a class="nav" href=""><li>Fun</li></a>
+</ul></nav>
+<div class="yy"></div>
+
+<!--section1--------------------------------------->
+<section class="band x" style="padding-bottom: 50em; width: 90vw; ">
+    <ul>
+        <li><a href="">
+           <img src="../content/0_LMD.png">
+           <div>
+               Learning Media Design
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/1_AMP.jpg">
+           <div>
+               AMP
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/2_OLI.png">
+           <div>
+               Open Learning Initiative
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/3_card.png">
+           <div>
+               Hyundai Card
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/4_data.png">
+           <div>
+               Cocktail Party
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/5_les_facades3.png">
+           <div>
+               Les Facades
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/6_memory1.jpg">
+           <div>
+               Memory
+           </div>   
+        </a></li>
+        
+        <li><a href="">
+           <img src="../content/7_playground2.jpg">
+           <div>
+               Playground
+           </div>   
+        </a></li>
+    </ul>
+</section>
+    
+
+
+
+
+<!--footer----------------------------------------->
+<footer>
+    <div class="y"></div>
+    <p class="footer"> made with ️🔥 by Yejin Lee</p>
+    <div class="y"></div>
+</footer> 
+
+
+
+
+
+<!-----back to the top button------------------>
+<button onclick="topFunction()" id="myBtn" title="Go to top">back to the top</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() 
+    {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() 
+    {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>   
+</body>

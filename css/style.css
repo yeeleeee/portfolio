@@ -1,139 +1,208 @@
+/*01.global style*/
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Lora:300,400,400i');
 body{
-    background-color: #f6f7f8;
-    margin:0;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
+    font-family: "open sans", sans-serif;
+    line-height: 1.6;
+    background: #f6f7f8;
+    margin: 0;
 }
+/*real estate**********************/
 section{
-   min-height: 50vh;
-}
-
-section.full{
-    height: 100vh;
-}
-
-.container{
-    display: flex;
-}
-
-#orange{
-    width: 80vw;
-    color: tomato;
-    margin: auto;
-}
-.wrapper{
-    width: 80vw;
-    margin: auto;
-    overflow: hidden;
-}
-.halfwrapper{
-    width: 40vw;
-    margin: 5vw;
-    overflow: hidden;
-}
-.imgwrapper{
-    width: 50vw;
+    width: 100vw;
     margin: 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.left{
+    float:left;
+    width: 50%;
+}
+.right{
+    float:right;
+    width: 50%;
 }
 
-.bgimage{
-    background-size: cover;
+.x{
+    margin-left: 5vw;
+    margin-right: 5vw;}
+.y{
+    margin-bottom: 5vw;
+    margin-top: 5vw;}
+
+.px{
+    padding-left: 5vw;
+    padding-right: 5vw;}
+.py{
+    padding-bottom: 5vw;
+    padding-top: 5vw;}
+
+.xx{
+    padding-left: 10vw;
+    padding-right: 10vw;}
+.yy{
+    padding-bottom: 10vw;
+    padding-top: 10vw; }
+
+/*nav******************************
+z-index 99*************************/
+nav{
+    position: sticky;
+    top: 0;
+    border-bottom: .1px #ff1111 solid;
+    background: #ffc0cb20;
+    z-index: 99;}
+nav ul{
+    position: relative;
+    padding: 1.5vw 2vw;
+}
+nav ul li{
+    display: inline-block;
+}
+nav:hover{
+    background: #fff0f2;
+    transition: background-color 600ms ease;
+}
+nav a:hover{
+    color: black;
+}
+.nav{
+    color: #ff004c;
+    font-family: "Abel",sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: 1em;
 }
 
-/*color*/
-#purple{
-    background-color: #eaecff;
+/*typography***********************/
+.h1{
+    font-family: "Abel";
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #ff1111;
 }
-#purpletxt{
-    color: #eaecff;
+.h2{
+    font-size: 1.2rem;
+/*    font-weight: 600;*/
 }
-#yellow{
-    background-color: #fcda32;
+.h3{
+    font-family:"Abel";
+    font-size: 1.4rem;
 }
-#yellowtxt{
-    color: #fcda32;
-}
-#blue{
-    background-color: #003bff;
-}
-#bluetxt{
-    color: #003bff;
-}
-#green{
-    background-color: #006b42;
-}
-#greentxt{
-   color: #006b42;
-}
-#brown{
-    background-color: #994312;
-}
-#browntxt{
-    color: #994312;
-}
-
-
-
-/*typography*/
-.paragraph{
-    font-family: 'Montserrat', sans-serif; 
-    color: #1a2421;
-    margin-bottom: 4rem;
-}
-.flavor{
-    font-style:italic;
-}
-h2{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 2rem;
-    margin: 0;
-}
-div, p{ 
-   font-weight: 300;
+.h4{
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    line-height: 1.8;
-    margin: 0;
-    margin-bottom: 1rem;
+    font-weight: 600;   
 }
-.caption{
-    font-size: .8em;
-    font-weight: 200;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
+.quote{
+    padding: 5vw;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+    background-color:#ffc0cb26;
 
-
-
-/*margins for divs*/
-.margintop20{
-    margin-top: 20vh;
-    overflow: visible;
 }
-.margintop30{
-    margin-top: 30vh;
-    overflow: visible;
-}
-.margintop40{
-    margin-top: 40vh;
-    overflow: visible;
+.p{
+    font-family: 'SpaceGrotesk-Bold', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8em;
 }
 
 
-.paragraph{
-    line-height: 1.8;
+
+img{
+    width: 100%;
+}
+.footer{
+    font-family: "Abel";
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 
 
 
 
-@media screen and (min-width: 768px) {
-#one{
-    height: 50vh;
-    display: flex;
-/*
-    border: 2px solid tomato;
-    margin: 2%;
-*/
+
+
+/*02.grid related!!! ************************************/
+.grid{
+    display: grid;
+    grid-template-columns: 3vw 1fr 1fr 1fr 1fr 3vw;
+    grid-template-rows: auto;
+    grid-gap: 2vw;
 }
+
+
+
+
+
+
+
+
+
+/*03.can change*/
+.open{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    margin-top: 10em;
+}
+.about{
+    color: #131711;
+    font-family: "Open Sans";
+    position: absolute;
+    top: 40vh;
+    left: 15vw;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/*04.************for top button***********/
+#myBtn {
+    font-family: 'abel';
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 1em;
+    color: #ff1111;
+    display: none;
+    float: right;
+    position: fixed;
+    z-index:100;
+    padding: 0;
+    top: 50%;
+    right: -1.5em;
+    transform: rotate(90deg);
+/*    display: block;*/    
+}
+#myBtn:hover{
+/*    text-decoration: underline;*/
+    cursor:pointer;
+    color: black;
+}
+
+/*05.media queries******************/
+@media only screen and (max-width: 600px) {
+    .left,.right{
+        float: none;
+        width: auto;
+    }
+    #myBtn{
+        height: 5vh;
+        width: 10vw;
+        background: red;
+        margin: auto;
+        color:#f6f7f8;
+        top: 1%;
+        transform: none;
+        right: 1em;
+        line-height: 1;
+    }
+    #myBtn:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color: white;
+    transition: ease .2s;
+    }
+ 
 }
